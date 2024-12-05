@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Updated portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Youssef Ragab",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.82.0"
+  }
+}
