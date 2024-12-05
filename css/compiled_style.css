@@ -36,6 +36,7 @@ body {
 #home {
   position: relative;
   height: 100vh;
+  min-height: 500px;
   display: grid;
   place-items: center;
 }
@@ -46,6 +47,53 @@ body {
 }
 #home .overlay {
   background: rgba(0, 0, 0, 0.85);
+}
+#home .overlay .top-heading {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+#home .overlay .top-heading h3 {
+  color: white;
+}
+#home .overlay .top-heading .scoials-container {
+  display: flex;
+  gap: 20px;
+}
+#home .overlay .top-heading .scoials-container .social {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(18, 18, 18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+#home .overlay .top-heading .scoials-container #linkedin svg {
+  height: 60%;
+  width: 60%;
+}
+#home .overlay .top-heading .scoials-container #linkedin:hover {
+  background-color: #0077b5;
+}
+#home .overlay .top-heading .scoials-container #github svg {
+  height: 80%;
+  width: 80%;
+  fill: #fff;
+}
+#home .overlay .top-heading .scoials-container #github:hover {
+  background-color: #fff;
+}
+#home .overlay .top-heading .scoials-container #email svg {
+  height: 60%;
+  width: 60%;
+}
+#home .overlay .top-heading .scoials-container #email:hover {
+  background-color: #ff0000;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */
