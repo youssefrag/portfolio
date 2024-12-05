@@ -1,0 +1,15 @@
+%section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background: $background;
+  color: $primary-font-color;
+}
+
+%full-screen-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
