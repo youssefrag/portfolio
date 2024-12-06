@@ -41,9 +41,8 @@
           transition: background-color 0.4s ease;
         }
 
-        #linkedin svg {
-          height: 60%;
-          width: 60%;
+        #linkedin i {
+          color: #fff;
         }
 
         #linkedin:hover {
@@ -60,9 +59,8 @@
           background-color: #fff;
         }
 
-        #email svg {
-          height: 60%;
-          width: 60%;
+        #email i {
+          color: #fff;
         }
 
         #email:hover {
@@ -70,5 +68,80 @@
         }
       }
     }
+
+    .main-heading {
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .location {
+        font-size: 0.75rem;
+        color: #fff;
+        margin-bottom: 2rem;
+      }
+
+      .title-main-container {
+        overflow: hidden;
+      }
+
+      .title-main {
+        color: white;
+        font-size: 3.75rem;
+        line-height: 4rem;
+        letter-spacing: 0.5rem;
+
+        width: 100%;
+
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+
+        border-right: 2px white solid;
+        animation: typing 4s steps(44) 1s both, blink-one 1s steps(44);
+      }
+
+      .title-secondary {
+        color: #3b83f6;
+        font-size: 3.75rem;
+        line-height: 4rem;
+
+        width: 100%;
+
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+
+        margin-right: 3px;
+
+        border-right: 2px transparent solid;
+        animation: typing 4s steps(44) 5s both,
+          blink-two 1s steps(44) 5s infinite;
+      }
+    }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-one {
+  50% {
+    border-right-color: white;
+  }
+}
+
+@keyframes blink-two {
+  50% {
+    border-right-color: white;
   }
 }

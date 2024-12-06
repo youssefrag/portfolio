@@ -73,9 +73,8 @@ body {
   cursor: pointer;
   transition: background-color 0.4s ease;
 }
-#home .overlay .top-heading .scoials-container #linkedin svg {
-  height: 60%;
-  width: 60%;
+#home .overlay .top-heading .scoials-container #linkedin i {
+  color: #fff;
 }
 #home .overlay .top-heading .scoials-container #linkedin:hover {
   background-color: #0077b5;
@@ -88,12 +87,71 @@ body {
 #home .overlay .top-heading .scoials-container #github:hover {
   background-color: #fff;
 }
-#home .overlay .top-heading .scoials-container #email svg {
-  height: 60%;
-  width: 60%;
+#home .overlay .top-heading .scoials-container #email i {
+  color: #fff;
 }
 #home .overlay .top-heading .scoials-container #email:hover {
   background-color: #ff0000;
+}
+#home .overlay .main-heading {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#home .overlay .main-heading .location {
+  font-size: 0.75rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+#home .overlay .main-heading .title-main-container {
+  overflow: hidden;
+}
+#home .overlay .main-heading .title-main {
+  color: white;
+  font-size: 3.75rem;
+  line-height: 4rem;
+  letter-spacing: 0.5rem;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  border-right: 2px white solid;
+  animation: typing 4s steps(44) 1s both, blink-one 1s steps(44);
+}
+#home .overlay .main-heading .title-secondary {
+  color: #3b83f6;
+  font-size: 3.75rem;
+  line-height: 4rem;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 3px;
+  border-right: 2px transparent solid;
+  animation: typing 4s steps(44) 5s both, blink-two 1s steps(44) 5s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-one {
+  50% {
+    border-right-color: white;
+  }
+}
+@keyframes blink-two {
+  50% {
+    border-right-color: white;
+  }
 }
 
 /*# sourceMappingURL=compiled_style.css.map */
