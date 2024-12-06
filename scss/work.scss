@@ -1,0 +1,49 @@
+#work {
+  @extend %section;
+
+  padding: 5rem 15rem;
+
+  .main-title {
+    font-size: 2.25rem;
+    color: #fff;
+  }
+
+  .work-experience {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .job-description {
+      .timeline {
+        list-style: none;
+
+        li {
+          position: relative;
+          padding: 10px;
+
+          &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-40%);
+          }
+
+          &:not(:last-child)::after {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background: #fff;
+            position: absolute;
+            left: -8px;
+            top: 50%;
+          }
+        }
+      }
+    }
+  }
+}

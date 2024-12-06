@@ -17,7 +17,7 @@ body {
   padding: 0;
 }
 
-#about {
+#about, #work {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -65,7 +65,7 @@ body {
 #home .overlay .top-heading .scoials-container .social {
   height: 35px;
   width: 35px;
-  background-color: rgb(18, 18, 18);
+  background-color: #222222;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ body {
 }
 #home .overlay .main-heading .button-container .see-work {
   color: white;
-  background-color: rgb(34, 34, 34);
+  background-color: #222222;
   padding: 0.5rem 1rem;
   border-radius: 0.375rem;
   border: 1px solid rgb(100, 116, 139);
@@ -206,6 +206,45 @@ body {
   100% {
     left: 130%;
   }
+}
+#work {
+  padding: 5rem 15rem;
+}
+#work .main-title {
+  font-size: 2.25rem;
+  color: #fff;
+}
+#work .work-experience {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#work .work-experience .job-description .timeline {
+  list-style: none;
+}
+#work .work-experience .job-description .timeline li {
+  position: relative;
+  padding: 10px;
+}
+#work .work-experience .job-description .timeline li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-40%);
+}
+#work .work-experience .job-description .timeline li:not(:last-child)::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: -8px;
+  top: 50%;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */
