@@ -151,6 +151,10 @@ body {
   text-decoration: none;
   color: #fff;
 }
+#home .overlay .main-heading .button-container a i {
+  color: #3b83f6;
+  margin-right: 0.4rem;
+}
 #home .overlay .main-heading .button-container .see-work {
   color: white;
   background-color: rgb(34, 34, 34);
