@@ -118,8 +118,8 @@ body {
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
-  border-right: 2px white solid;
-  animation: typing 4s steps(44) 1s both, blink-one 1s steps(44);
+  border-right: 2px transparent solid;
+  animation: typing 3s steps(44) 2s both, blink 1s steps(44) 0.5s infinite;
 }
 #home .overlay .main-heading .title-secondary {
   color: #3b83f6;
@@ -132,7 +132,7 @@ body {
   display: inline-block;
   margin-right: 3px;
   border-right: 2px transparent solid;
-  animation: typing 4s steps(44) 5s both, blink-two 1s steps(44) 5s infinite;
+  animation: typing 3s steps(44) 5s both, blink 1s steps(44) 5s infinite;
 }
 
 @keyframes typing {
@@ -143,14 +143,12 @@ body {
     width: 100%;
   }
 }
-@keyframes blink-one {
+@keyframes blink {
   50% {
     border-right-color: white;
   }
-}
-@keyframes blink-two {
-  50% {
-    border-right-color: white;
+  100% {
+    border-right-color: transparent;
   }
 }
 
