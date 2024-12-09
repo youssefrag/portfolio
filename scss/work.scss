@@ -1,132 +1,95 @@
 #work {
   @extend %section;
-
   max-width: 100vw;
+
+  color: white;
+  // padding: 5rem 10rem;
 
   .main-title {
     font-size: 3.75rem;
-    color: #fff;
-    padding: 3.5rem 4rem;
+    padding: 5rem 15rem;
   }
 
-  .work-experience {
-    padding: 0 6rem;
+  .work-experience-container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    max-width: 1600px;
+    padding: 0 15rem;
 
-    .job-description {
-      max-width: 40vw;
-      .timeline {
-        list-style: none;
-        margin-bottom: 5rem;
+    .jobs-description {
+      width: 30vw;
 
-        li {
-          position: relative;
-          padding: 10px;
+      .job {
+        margin-bottom: 7rem;
 
-          color: #fff;
-          padding-left: 4rem;
-          line-height: 1.75rem;
-          font-size: 1.25rem;
+        .job-title-container {
+          height: 50px;
+          display: flex;
+          gap: 40px;
+          align-items: center;
 
-          &::before {
-            content: "";
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: #fff;
-            position: absolute;
-            left: -15px;
-            top: 50%;
-            transform: translateY(-40%);
-          }
-
-          &:not(:last-child)::after {
-            content: "";
-            width: 2px;
+          margin-bottom: 2.25rem;
+          img {
             height: 100%;
-            background: #fff;
-            position: absolute;
-            left: -8px;
-            top: 50%;
-          }
-        }
-
-        #guilds-pro {
-          line-height: 1.2;
-          .container {
-            h3 {
-              color: white;
-              font-size: 1.5rem;
-            }
-
-            span {
-              color: $main-blue;
-              font-size: 1rem;
-            }
-          }
-
-          &::before {
-            content: "";
-            width: 40px;
-            height: 40px;
+            width: auto;
             border-radius: 50%;
+          }
+          .title-description {
+            display: flex;
+            flex-direction: column;
 
-            position: absolute;
-            left: -27px;
-            top: 50%;
-            transform: translateY(-40%);
+            h3 {
+              font-size: 1.75rem;
+              margin-bottom: 0;
+              padding-bottom: 0;
+            }
 
-            background-image: url("../assets/guilds.jpeg") repeat 0 0;
-            background-size: cover;
-            background-position: center;
+            p {
+              color: $main-blue;
+              font-size: 1.1rem;
+            }
           }
         }
 
-        #alibi {
-          line-height: 1.2;
-          .container {
-            h3 {
-              color: white;
-              font-size: 1.5rem;
+        .details-container {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          .point-container {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+
+            margin-left: 14px;
+
+            .bullet {
+              height: 20px;
+              width: 20px;
+              border-radius: 50%;
+
+              flex-shrink: 0;
+              flex-grow: 0;
+
+              background-color: #fff;
             }
 
-            span {
-              color: $main-blue;
-              font-size: 1rem;
+            .text {
+              font-size: 1.125rem;
+              line-height: 1.75rem;
+              font-weight: bold;
             }
-          }
-
-          &::before {
-            // content: "";
-            // width: 40px;
-            // height: 40px;
-            // border-radius: 50%;
-
-            // position: absolute;
-            // left: -27px;
-            // top: 50%;
-            // transform: translateY(-40%);
-
-            // background-image: url("../assets/alibi.jpeg") repeat 0 0;
-            // background-size: 30%;
-            // background-position: center;
-
-            content: "";
-            height: 20px;
-            width: 20px;
-            // background-color: white;
-            background-color: transparent !important;
-            background: url("../assets/alibi.jpeg");
-            z-index: 100;
-            position: absolute;
-            top: 0px;
-            left: 0px;
           }
         }
       }
+    }
+
+    .tech-stack {
+      position: sticky;
+      top: 100px;
+
+      border: 2px solid white;
+      width: 40%;
+      height: 60vh;
     }
   }
 }
