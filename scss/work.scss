@@ -21,6 +21,8 @@
 
       .job {
         margin-bottom: 7rem;
+        opacity: 0.1;
+        transition: opacity 0.3s ease;
 
         .job-title-container {
           height: 50px;
@@ -82,6 +84,10 @@
           }
         }
       }
+
+      .active {
+        opacity: 1;
+      }
     }
 
     .tech-stack {
@@ -91,6 +97,10 @@
       border: 2px solid white;
       width: 40%;
       height: 60vh;
+
+      .job-stack {
+        display: none;
+      }
     }
   }
 }

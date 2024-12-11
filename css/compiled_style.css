@@ -226,6 +226,8 @@ body {
 }
 #work .work-experience-container .jobs-description .job {
   margin-bottom: 7rem;
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
 }
 #work .work-experience-container .jobs-description .job .job-title-container {
   height: 50px;
@@ -276,12 +278,18 @@ body {
   line-height: 1.75rem;
   font-weight: bold;
 }
+#work .work-experience-container .jobs-description .active {
+  opacity: 1;
+}
 #work .work-experience-container .tech-stack {
   position: sticky;
   top: 100px;
   border: 2px solid white;
   width: 40%;
   height: 60vh;
+}
+#work .work-experience-container .tech-stack .job-stack {
+  display: none;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */
