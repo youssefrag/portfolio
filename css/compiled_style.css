@@ -33,6 +33,20 @@ body {
   width: 100%;
 }
 
+.fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #home {
   position: relative;
   height: 100vh;
@@ -290,6 +304,7 @@ body {
 }
 #work .work-experience-container .tech-stack .job-stack {
   display: none;
+  transition: display 5s ease;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */

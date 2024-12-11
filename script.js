@@ -8,12 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add(toggleClass);
-          console.log(entry.target.classList);
           const alibiStack = document.getElementById("alibi-stack");
           const guildsproStack = document.getElementById("guilsPro-stack");
           if (entry.target.classList[1] === "alibi") {
-            alibiStack.style.display = "inline";
             guildsproStack.style.display = "none";
+            alibiStack.style.display = "inline";
           } else if (entry.target.classList[1] === "guildsPro") {
             alibiStack.style.display = "none";
             guildsproStack.style.display = "inline";
