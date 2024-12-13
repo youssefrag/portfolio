@@ -236,7 +236,7 @@ body {
   padding: 0 12rem;
 }
 #work .work-experience-container .jobs-description {
-  width: 40vw;
+  width: 32vw;
 }
 #work .work-experience-container .jobs-description .job {
   margin-bottom: 7rem;
@@ -331,6 +331,69 @@ body {
 #work .work-experience-container .tech-stack .job-stack .stack-container .item .name {
   font-size: 1.75rem;
   font-weight: 600;
+}
+
+#about .image-container {
+  text-align: center;
+  height: 50vh;
+}
+#about .image-container img {
+  width: 60%;
+  height: auto;
+}
+#about .about-text-container {
+  background-image: url("../assets/gradient.png");
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding-top: 5rem;
+  gap: 3rem;
+}
+#about .about-text-container .about-title {
+  font-size: 2.25rem;
+}
+#about .about-text-container .about-text {
+  width: 60%;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+#about .about-text-container .about-button-container {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-text-container .about-button-container .about-button-regular {
+  padding: 0.8rem 2rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+#about .about-text-container .about-button-container .about-button-hovered {
+  display: none;
+  padding: 0.8rem 2rem;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  color: #0077b5;
+}
+#about .about-text-container .about-button-container .about-button-hovered i {
+  color: #0077b5;
+  font-size: 1.4rem;
+  margin-left: 0.1rem;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */

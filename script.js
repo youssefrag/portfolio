@@ -42,3 +42,29 @@ document.addEventListener("DOMContentLoaded", () => {
     "active"
   );
 });
+
+// About Section button change on hover
+
+const buttonContainer = document.getElementsByClassName(
+  "about-button-container"
+)[0];
+
+const buttonContentRegular = document.getElementsByClassName(
+  "about-button-regular"
+)[0];
+
+const buttonContentHovered = document.getElementsByClassName(
+  "about-button-hovered"
+)[0];
+
+buttonContainer.addEventListener("mouseover", () => {
+  console.log("hovering");
+  buttonContentHovered.style.display = "inline";
+  buttonContentRegular.style.display = "none";
+});
+
+buttonContainer.addEventListener("mouseleave", () => {
+  console.log("leaving hover");
+  buttonContentHovered.style.display = "none";
+  buttonContentRegular.style.display = "inline";
+});
