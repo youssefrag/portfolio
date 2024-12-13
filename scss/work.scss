@@ -14,10 +14,10 @@
   .work-experience-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 15rem;
+    padding: 0 12rem;
 
     .jobs-description {
-      width: 30vw;
+      width: 40vw;
 
       .job {
         margin-bottom: 7rem;
@@ -94,13 +94,46 @@
       position: sticky;
       top: 100px;
 
-      border: 2px solid white;
+      // border: 2px solid white;
       width: 40%;
       height: 60vh;
 
       .job-stack {
         display: none;
         transition: display 5s ease;
+
+        .title {
+          font-size: 2rem;
+          font-weight: 900;
+        }
+
+        .stack-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin: 2rem 0;
+
+          row-gap: 0.5rem;
+          column-gap: 2rem;
+
+          .item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: rgb(18, 18, 18);
+
+            border-radius: 20px;
+            padding: 1rem 1rem;
+
+            img {
+              height: 4rem;
+              width: auto;
+            }
+            .name {
+              font-size: 1.75rem;
+              font-weight: 600;
+            }
+          }
+        }
       }
     }
   }

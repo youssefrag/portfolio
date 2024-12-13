@@ -233,10 +233,10 @@ body {
 #work .work-experience-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 15rem;
+  padding: 0 12rem;
 }
 #work .work-experience-container .jobs-description {
-  width: 30vw;
+  width: 40vw;
 }
 #work .work-experience-container .jobs-description .job {
   margin-bottom: 7rem;
@@ -298,13 +298,39 @@ body {
 #work .work-experience-container .tech-stack {
   position: sticky;
   top: 100px;
-  border: 2px solid white;
   width: 40%;
   height: 60vh;
 }
 #work .work-experience-container .tech-stack .job-stack {
   display: none;
   transition: display 5s ease;
+}
+#work .work-experience-container .tech-stack .job-stack .title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+#work .work-experience-container .tech-stack .job-stack .stack-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem 0;
+  row-gap: 0.5rem;
+  column-gap: 2rem;
+}
+#work .work-experience-container .tech-stack .job-stack .stack-container .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(18, 18, 18);
+  border-radius: 20px;
+  padding: 1rem 1rem;
+}
+#work .work-experience-container .tech-stack .job-stack .stack-container .item img {
+  height: 4rem;
+  width: auto;
+}
+#work .work-experience-container .tech-stack .job-stack .stack-container .item .name {
+  font-size: 1.75rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */

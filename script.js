@@ -26,9 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
             alibiDesc.classList.remove("active");
           }
         }
-        // else {
-        //   entry.target.classList.remove(toggleClass);
-        // }
       });
     }, observerOptions);
 
