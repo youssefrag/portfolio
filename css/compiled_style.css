@@ -17,7 +17,7 @@ body {
   padding: 0;
 }
 
-#about, #work {
+#projects, #about, #work {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -394,6 +394,70 @@ body {
   color: #0077b5;
   font-size: 1.4rem;
   margin-left: 0.1rem;
+}
+
+#projects {
+  width: 100vw;
+}
+#projects .main-title {
+  padding: 5rem 20rem 2rem 20rem;
+  color: #fff;
+  font-size: 3.75rem;
+  margin-bottom: 3rem;
+}
+#projects .grid-container {
+  padding: 0 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+}
+#projects .grid-container .job-card {
+  background-color: #fff;
+  width: 100%;
+  height: 5px;
+}
+#projects .grid-container .job-card .img-container {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  background-image: url("../assets/soundsphere.jpeg");
+  background-repeat: no-repeat;
+}
+#projects .grid-container .job-card .job-desc {
+  background-color: rgb(18, 18, 18);
+  padding: 1.25rem;
+}
+#projects .grid-container .job-card .job-desc .title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+#projects .grid-container .job-card .job-desc p {
+  color: #fff;
+  margin-bottom: 0.7rem;
+}
+#projects .grid-container .job-card .job-desc .job-stack {
+  display: flex;
+  gap: 1rem;
+}
+#projects .grid-container .job-card .job-desc .job-stack .stack-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: rgb(34, 34, 34);
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+#projects .grid-container .job-card .job-desc .job-stack .stack-item img {
+  height: 1.5rem;
+  width: auto;
+}
+#projects .grid-container .job-card .job-desc .job-stack .stack-item h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */
