@@ -410,23 +410,37 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
+  row-gap: 8rem;
+  padding-bottom: 4rem;
 }
 #projects .grid-container .job-card {
   background-color: #fff;
   width: 100%;
-  height: 5px;
+  justify-self: center;
+  align-self: center;
+}
+#projects .grid-container .job-card #sound-sphere {
+  background-image: url("../assets/soundsphere.jpeg");
+}
+#projects .grid-container .job-card #website-builder {
+  background-image: url("../assets/WebsiteBuilder.jpeg");
+}
+#projects .grid-container .job-card #box-shop {
+  background-image: url("../assets/BoxShop.jpeg");
 }
 #projects .grid-container .job-card .img-container {
   width: 100%;
   background-size: cover;
   background-position: center;
   height: 20rem;
-  background-image: url("../assets/soundsphere.jpeg");
   background-repeat: no-repeat;
 }
 #projects .grid-container .job-card .job-desc {
   background-color: rgb(18, 18, 18);
   padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #projects .grid-container .job-card .job-desc .title {
   color: #fff;
@@ -436,11 +450,12 @@ body {
 }
 #projects .grid-container .job-card .job-desc p {
   color: #fff;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.9rem;
 }
 #projects .grid-container .job-card .job-desc .job-stack {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 #projects .grid-container .job-card .job-desc .job-stack .stack-item {
   display: flex;
