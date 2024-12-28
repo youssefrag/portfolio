@@ -235,6 +235,11 @@ body {
   justify-content: space-between;
   padding: 0 12rem;
 }
+@media (max-width: 1500px) {
+  #work .work-experience-container {
+    padding: 0 9rem;
+  }
+}
 #work .work-experience-container .jobs-description {
   width: 32vw;
 }
@@ -301,6 +306,11 @@ body {
   width: 40%;
   height: 60vh;
 }
+@media (max-width: 1500px) {
+  #work .work-experience-container .tech-stack {
+    width: 50%;
+  }
+}
 #work .work-experience-container .tech-stack .job-stack {
   display: none;
   transition: display 5s ease;
@@ -328,9 +338,19 @@ body {
   height: 4rem;
   width: auto;
 }
+@media (max-width: 1500px) {
+  #work .work-experience-container .tech-stack .job-stack .stack-container .item img {
+    height: 3.5rem;
+  }
+}
 #work .work-experience-container .tech-stack .job-stack .stack-container .item .name {
   font-size: 1.75rem;
   font-weight: 600;
+}
+@media (max-width: 1500px) {
+  #work .work-experience-container .tech-stack .job-stack .stack-container .item .name {
+    font-size: 1.4rem;
+  }
 }
 
 #about .image-container {
@@ -349,8 +369,8 @@ body {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  padding-top: 5rem;
-  gap: 3rem;
+  padding: 2rem 0;
+  justify-content: space-evenly;
 }
 #about .about-text-container .about-title {
   font-size: 2.25rem;
@@ -405,6 +425,11 @@ body {
   font-size: 3.75rem;
   margin-bottom: 3rem;
 }
+@media (max-width: 1500px) {
+  #projects .main-title {
+    padding: 5rem 10rem 2rem 10rem;
+  }
+}
 #projects .grid-container {
   padding: 0 20rem;
   display: grid;
@@ -412,6 +437,12 @@ body {
   column-gap: 8rem;
   row-gap: 8rem;
   padding-bottom: 4rem;
+}
+@media (max-width: 1500px) {
+  #projects .grid-container {
+    padding: 0 10rem;
+    padding-bottom: 6rem;
+  }
 }
 #projects .grid-container .job-card {
   background-color: transparent;

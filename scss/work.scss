@@ -16,6 +16,10 @@
     justify-content: space-between;
     padding: 0 12rem;
 
+    @media (max-width: $breakpoint-laptop) {
+      padding: 0 9rem;
+    }
+
     .jobs-description {
       width: 32vw;
 
@@ -98,6 +102,10 @@
       width: 40%;
       height: 60vh;
 
+      @media (max-width: $breakpoint-laptop) {
+        width: 50%;
+      }
+
       .job-stack {
         display: none;
         transition: display 5s ease;
@@ -127,10 +135,18 @@
             img {
               height: 4rem;
               width: auto;
+
+              @media (max-width: $breakpoint-laptop) {
+                height: 3.5rem;
+              }
             }
             .name {
               font-size: 1.75rem;
               font-weight: 600;
+
+              @media (max-width: $breakpoint-laptop) {
+                font-size: 1.4rem;
+              }
             }
           }
         }

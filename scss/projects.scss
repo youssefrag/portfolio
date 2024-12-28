@@ -10,6 +10,10 @@
     color: #fff;
     font-size: 3.75rem;
     margin-bottom: 3rem;
+
+    @media (max-width: $breakpoint-laptop) {
+      padding: 5rem 10rem 2rem 10rem;
+    }
   }
 
   .grid-container {
@@ -20,6 +24,11 @@
     column-gap: 8rem;
     row-gap: 8rem;
     padding-bottom: 4rem;
+
+    @media (max-width: $breakpoint-laptop) {
+      padding: 0 10rem;
+      padding-bottom: 6rem;
+    }
 
     .job-card {
       background-color: transparent;
