@@ -17,7 +17,7 @@ body {
   padding: 0;
 }
 
-#projects, #about, #work {
+#mobile-projects, #projects, #about, #work {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -230,6 +230,11 @@ body {
   font-size: 3.75rem;
   padding: 5rem 15rem;
 }
+@media (max-width: 1500px) {
+  #work .main-title {
+    padding: 5rem 8rem;
+  }
+}
 #work .work-experience-container {
   display: flex;
   justify-content: space-between;
@@ -237,7 +242,7 @@ body {
 }
 @media (max-width: 1500px) {
   #work .work-experience-container {
-    padding: 0 9rem;
+    padding: 0 6rem;
   }
 }
 #work .work-experience-container .jobs-description {
@@ -340,7 +345,7 @@ body {
 }
 @media (max-width: 1500px) {
   #work .work-experience-container .tech-stack .job-stack .stack-container .item img {
-    height: 3.5rem;
+    height: 3rem;
   }
 }
 #work .work-experience-container .tech-stack .job-stack .stack-container .item .name {
@@ -349,13 +354,15 @@ body {
 }
 @media (max-width: 1500px) {
   #work .work-experience-container .tech-stack .job-stack .stack-container .item .name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
 #about .image-container {
   text-align: center;
-  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 #about .image-container img {
   width: 60%;
@@ -419,6 +426,11 @@ body {
 #projects {
   width: 100vw;
 }
+@media (max-width: 1145px) {
+  #projects {
+    display: none;
+  }
+}
 #projects .main-title {
   padding: 5rem 20rem 2rem 20rem;
   color: #fff;
@@ -427,7 +439,7 @@ body {
 }
 @media (max-width: 1500px) {
   #projects .main-title {
-    padding: 5rem 10rem 2rem 10rem;
+    padding: 5rem 5rem 2rem 5rem;
   }
 }
 #projects .grid-container {
@@ -440,8 +452,13 @@ body {
 }
 @media (max-width: 1500px) {
   #projects .grid-container {
-    padding: 0 10rem;
+    padding: 0 5rem;
     padding-bottom: 6rem;
+  }
+}
+@media (max-width: 1145px) {
+  #projects .grid-container {
+    grid-template-columns: 1fr;
   }
 }
 #projects .grid-container .job-card {
@@ -561,6 +578,93 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 0.875rem;
+}
+
+#mobile-projects {
+  display: none;
+}
+@media (max-width: 1145px) {
+  #mobile-projects {
+    display: block;
+  }
+}
+#mobile-projects .main-title {
+  color: #fff;
+  padding: 0 4rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+#mobile-projects .projects-container {
+  padding: 0 4rem;
+}
+#mobile-projects .projects-container .job-card {
+  display: flex;
+  border-radius: 0.5rem;
+}
+#mobile-projects .projects-container .job-card #sound-sphere {
+  background-image: url("../assets/soundsphere.jpeg");
+}
+#mobile-projects .projects-container .job-card .logo {
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+}
+#mobile-projects .projects-container .job-card .content {
+  background-color: rgb(18, 18, 18);
+  height: 100%;
+  width: 60%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+#mobile-projects .projects-container .job-card .content .title-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#mobile-projects .projects-container .job-card .content .title-links .project-title {
+  color: #fff;
+  font-size: 1.4rem;
+}
+#mobile-projects .projects-container .job-card .content .title-links .links-container {
+  color: #fff;
+  display: flex;
+  gap: 0.8rem;
+}
+#mobile-projects .projects-container .job-card .content .title-links .links-container .link {
+  cursor: pointer;
+}
+#mobile-projects .projects-container .job-card .content .title-links .links-container .link i {
+  font-size: 0.8rem;
+}
+#mobile-projects .projects-container .job-card .content .title-links .links-container .link span {
+  font-size: 0.8rem;
+}
+#mobile-projects .projects-container .job-card .content .description {
+  color: #fff;
+}
+#mobile-projects .projects-container .job-card .content .job-stack {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#mobile-projects .projects-container .job-card .content .job-stack .stack-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(34, 34, 34);
+  padding: 0.3rem 0.8rem 0.4rem 0.5rem;
+}
+#mobile-projects .projects-container .job-card .content .job-stack .stack-item img {
+  height: 0.7rem;
+  width: auto;
+}
+#mobile-projects .projects-container .job-card .content .job-stack .stack-item h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */

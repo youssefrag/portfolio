@@ -9,6 +9,9 @@
   .main-title {
     font-size: 3.75rem;
     padding: 5rem 15rem;
+    @media (max-width: $breakpoint-4) {
+      padding: 5rem 8rem;
+    }
   }
 
   .work-experience-container {
@@ -16,8 +19,8 @@
     justify-content: space-between;
     padding: 0 12rem;
 
-    @media (max-width: $breakpoint-laptop) {
-      padding: 0 9rem;
+    @media (max-width: $breakpoint-4) {
+      padding: 0 6rem;
     }
 
     .jobs-description {
@@ -102,7 +105,7 @@
       width: 40%;
       height: 60vh;
 
-      @media (max-width: $breakpoint-laptop) {
+      @media (max-width: $breakpoint-4) {
         width: 50%;
       }
 
@@ -136,16 +139,16 @@
               height: 4rem;
               width: auto;
 
-              @media (max-width: $breakpoint-laptop) {
-                height: 3.5rem;
+              @media (max-width: $breakpoint-4) {
+                height: 3rem;
               }
             }
             .name {
               font-size: 1.75rem;
               font-weight: 600;
 
-              @media (max-width: $breakpoint-laptop) {
-                font-size: 1.4rem;
+              @media (max-width: $breakpoint-4) {
+                font-size: 1.2rem;
               }
             }
           }

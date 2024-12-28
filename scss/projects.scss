@@ -5,14 +5,18 @@
   width: 100vw;
   //   background-color: rgb(15, 15, 15);
 
+  @media (max-width: $breakpoint-2) {
+    display: none;
+  }
+
   .main-title {
     padding: 5rem 20rem 2rem 20rem;
     color: #fff;
     font-size: 3.75rem;
     margin-bottom: 3rem;
 
-    @media (max-width: $breakpoint-laptop) {
-      padding: 5rem 10rem 2rem 10rem;
+    @media (max-width: $breakpoint-4) {
+      padding: 5rem 5rem 2rem 5rem;
     }
   }
 
@@ -25,9 +29,13 @@
     row-gap: 8rem;
     padding-bottom: 4rem;
 
-    @media (max-width: $breakpoint-laptop) {
-      padding: 0 10rem;
+    @media (max-width: $breakpoint-4) {
+      padding: 0 5rem;
       padding-bottom: 6rem;
+    }
+
+    @media (max-width: $breakpoint-2) {
+      grid-template-columns: 1fr;
     }
 
     .job-card {
