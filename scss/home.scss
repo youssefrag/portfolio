@@ -5,6 +5,10 @@
   display: grid;
   place-items: center;
 
+  @media (max-width: $breakpoint-1) {
+    display: none;
+  }
+
   .image-container {
     background-image: url("../assets/home.jpeg");
     background-size: cover;
@@ -29,6 +33,10 @@
       }
       h3 {
         color: white;
+
+        // @media (max-width: $breakpoint-1) {
+        //   display: none;
+        // }
       }
       .scoials-container {
         display: flex;

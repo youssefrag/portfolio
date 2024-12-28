@@ -75,12 +75,20 @@
             flex-grow: 0;
 
             background-color: #fff;
+
+            @media (max-width: $breakpoint-1) {
+              display: none;
+            }
           }
 
           .text {
             font-size: 0.8rem;
             line-height: 1.2rem;
             font-weight: bold;
+
+            @media (max-width: $breakpoint-1) {
+              font-size: 0.6rem;
+            }
           }
         }
       }

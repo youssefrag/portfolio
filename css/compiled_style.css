@@ -17,7 +17,7 @@ body {
   padding: 0;
 }
 
-#mobile-projects, #mobile-work, #projects, #about, #work {
+#mobile-home, #mobile-projects, #mobile-work, #projects, #about, #work {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -25,7 +25,7 @@ body {
   color: rgb(150, 150, 150);
 }
 
-#home .overlay, #home .image-container {
+#mobile-home .overlay, #mobile-home .image-container, #home .overlay, #home .image-container {
   position: fixed;
   left: 0;
   top: 0;
@@ -53,6 +53,11 @@ body {
   min-height: 500px;
   display: grid;
   place-items: center;
+}
+@media (max-width: 771px) {
+  #home {
+    display: none;
+  }
 }
 #home .image-container {
   background-image: url("../assets/home.jpeg");
@@ -691,10 +696,20 @@ body {
   flex-grow: 0;
   background-color: #fff;
 }
+@media (max-width: 771px) {
+  #mobile-work .jobs-container .job .details-container .point-container .bullet {
+    display: none;
+  }
+}
 #mobile-work .jobs-container .job .details-container .point-container .text {
   font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: bold;
+}
+@media (max-width: 771px) {
+  #mobile-work .jobs-container .job .details-container .point-container .text {
+    font-size: 0.6rem;
+  }
 }
 #mobile-work .jobs-container .job .job-stack {
   display: flex;
@@ -733,6 +748,13 @@ body {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 771px) {
+  #mobile-projects .main-title {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+    padding: 1rem 1rem;
+  }
+}
 #mobile-projects .projects-container {
   padding: 3rem 4rem;
   display: flex;
@@ -741,7 +763,7 @@ body {
 }
 @media (max-width: 771px) {
   #mobile-projects .projects-container {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 #mobile-projects .projects-container .job-card {
@@ -857,6 +879,105 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 0.7rem;
+}
+
+#mobile-home {
+  display: none;
+}
+@media (max-width: 771px) {
+  #mobile-home {
+    display: block;
+  }
+}
+#mobile-home .image-container {
+  background-image: url("../assets/home.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#mobile-home .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#mobile-home .overlay h3 {
+  color: #fff;
+}
+#mobile-home .overlay h2 {
+  color: #3b83f6;
+}
+#mobile-home .overlay .button-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+#mobile-home .overlay .button-container a {
+  text-decoration: none;
+  color: #fff;
+}
+#mobile-home .overlay .button-container a i {
+  color: #3b83f6;
+  margin-right: 0.4rem;
+}
+#mobile-home .overlay .button-container .see-work {
+  color: white;
+  background-color: #222222;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgb(100, 116, 139);
+  font-size: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#mobile-home .overlay .button-container .see-work::before {
+  content: "";
+  background-color: #fff;
+  filter: blur(10px);
+  transform: skew(-20deg);
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  left: -100%;
+  inset-block: 0;
+  animation: shine 4s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+#mobile-home .overlay .scoials-container {
+  display: flex;
+  gap: 20px;
+}
+#mobile-home .overlay .scoials-container .social {
+  height: 35px;
+  width: 35px;
+  background-color: #222222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+#mobile-home .overlay .scoials-container #linkedin i {
+  color: #fff;
+}
+#mobile-home .overlay .scoials-container #linkedin:hover {
+  background-color: #0077b5;
+}
+#mobile-home .overlay .scoials-container #github svg {
+  height: 80%;
+  width: 80%;
+  fill: #fff;
+}
+#mobile-home .overlay .scoials-container #github:hover {
+  background-color: #fff;
+}
+#mobile-home .overlay .scoials-container #email i {
+  color: #fff;
+}
+#mobile-home .overlay .scoials-container #email:hover {
+  background-color: #ff0000;
 }
 
 /*# sourceMappingURL=compiled_style.css.map */
