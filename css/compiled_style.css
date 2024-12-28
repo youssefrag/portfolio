@@ -17,7 +17,7 @@ body {
   padding: 0;
 }
 
-#mobile-projects, #projects, #about, #work {
+#mobile-projects, #mobile-work, #projects, #about, #work {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -68,6 +68,11 @@ body {
   margin: 60px 200px;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1145px) {
+  #home .overlay .top-heading {
+    margin: 60px 3rem;
+  }
 }
 #home .overlay .top-heading h3 {
   color: white;
@@ -135,6 +140,13 @@ body {
   border-right: 2px transparent solid;
   animation: typing 2.5s steps(40) 2s both, blink 1s steps(44) 0.5s infinite;
 }
+@media (max-width: 1145px) {
+  #home .overlay .main-heading .title-main {
+    font-size: 2.4rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.2rem;
+  }
+}
 #home .overlay .main-heading .title-secondary {
   color: #3b83f6;
   font-size: 3.75rem;
@@ -148,12 +160,25 @@ body {
   border-right: 2px transparent solid;
   animation: typing 3s steps(44) 5s both, blink 1s steps(44) 5s infinite;
 }
+@media (max-width: 1145px) {
+  #home .overlay .main-heading .title-secondary {
+    font-size: 2.4rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.2rem;
+    width: 80%;
+  }
+}
 #home .overlay .main-heading .description-container {
   margin-top: 2rem;
 }
 #home .overlay .main-heading .description-container p {
   color: #d1d1d1;
   font-size: 1.2rem;
+}
+@media (max-width: 1145px) {
+  #home .overlay .main-heading .description-container p {
+    font-size: 1rem;
+  }
 }
 #home .overlay .main-heading .button-container {
   margin-top: 1.5rem;
@@ -225,6 +250,11 @@ body {
   max-width: 100vw;
   border-top: 10px solid #868e96;
   color: white;
+}
+@media (max-width: 1145px) {
+  #work {
+    display: none;
+  }
 }
 #work .main-title {
   font-size: 3.75rem;
@@ -358,6 +388,9 @@ body {
   }
 }
 
+#about {
+  min-height: 40vh;
+}
 #about .image-container {
   text-align: center;
   display: flex;
@@ -371,22 +404,34 @@ body {
 #about .about-text-container {
   background-image: url("../assets/gradient.png");
   width: 100%;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
   padding: 2rem 0;
+  gap: 3rem;
   justify-content: space-evenly;
 }
 #about .about-text-container .about-title {
   font-size: 2.25rem;
+}
+@media (max-width: 1145px) {
+  #about .about-text-container .about-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }
 #about .about-text-container .about-text {
   width: 60%;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
+}
+@media (max-width: 1145px) {
+  #about .about-text-container .about-text {
+    width: 80%;
+    font-size: 1rem;
+  }
 }
 #about .about-text-container .about-button-container {
   display: flex;
@@ -580,6 +625,100 @@ body {
   font-size: 0.875rem;
 }
 
+#mobile-work {
+  min-height: 60vh;
+  color: #fff;
+  display: none;
+}
+@media (max-width: 1145px) {
+  #mobile-work {
+    display: block;
+  }
+}
+#mobile-work .main-title {
+  font-size: 1.6rem;
+  padding: 2rem 3rem;
+}
+#mobile-work .jobs-container {
+  padding: 0.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 3rem;
+}
+#mobile-work .jobs-container .job .job-title-container {
+  height: 30px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 2.25rem;
+}
+#mobile-work .jobs-container .job .job-title-container img {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+}
+#mobile-work .jobs-container .job .job-title-container .title-description {
+  display: flex;
+  flex-direction: column;
+}
+#mobile-work .jobs-container .job .job-title-container .title-description h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#mobile-work .jobs-container .job .job-title-container .title-description p {
+  color: #3b83f6;
+  font-size: 0.8rem;
+}
+#mobile-work .jobs-container .job .details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+#mobile-work .jobs-container .job .details-container .point-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-left: 10px;
+}
+#mobile-work .jobs-container .job .details-container .point-container .bullet {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #fff;
+}
+#mobile-work .jobs-container .job .details-container .point-container .text {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+}
+#mobile-work .jobs-container .job .job-stack {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#mobile-work .jobs-container .job .job-stack .stack-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(34, 34, 34);
+  padding: 0.3rem 0.8rem 0.4rem 0.5rem;
+}
+#mobile-work .jobs-container .job .job-stack .stack-item img {
+  height: 0.7rem;
+  width: auto;
+}
+#mobile-work .jobs-container .job .job-stack .stack-item h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
 #mobile-projects {
   display: none;
 }
@@ -590,12 +729,20 @@ body {
 }
 #mobile-projects .main-title {
   color: #fff;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 #mobile-projects .projects-container {
-  padding: 0 4rem;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (max-width: 771px) {
+  #mobile-projects .projects-container {
+    padding: 3rem 1rem;
+  }
 }
 #mobile-projects .projects-container .job-card {
   display: flex;
@@ -604,10 +751,21 @@ body {
 #mobile-projects .projects-container .job-card #sound-sphere {
   background-image: url("../assets/soundsphere.jpeg");
 }
+#mobile-projects .projects-container .job-card #website-builder {
+  background-image: url("../assets/WebsiteBuilder.jpeg");
+}
+#mobile-projects .projects-container .job-card #box-shop {
+  background-image: url("../assets/BoxShop.jpeg");
+}
 #mobile-projects .projects-container .job-card .logo {
   width: 40%;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 771px) {
+  #mobile-projects .projects-container .job-card .logo {
+    display: none;
+  }
 }
 #mobile-projects .projects-container .job-card .content {
   background-color: rgb(18, 18, 18);
@@ -618,14 +776,32 @@ body {
   flex-direction: column;
   gap: 1.2rem;
 }
+@media (max-width: 771px) {
+  #mobile-projects .projects-container .job-card .content {
+    width: 90%;
+  }
+}
 #mobile-projects .projects-container .job-card .content .title-links {
   display: flex;
   align-items: center;
   gap: 2rem;
+  width: 60%;
+}
+@media (max-width: 771px) {
+  #mobile-projects .projects-container .job-card .content .title-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
 }
 #mobile-projects .projects-container .job-card .content .title-links .project-title {
   color: #fff;
   font-size: 1.4rem;
+}
+@media (max-width: 771px) {
+  #mobile-projects .projects-container .job-card .content .title-links .project-title {
+    font-size: 1rem;
+  }
 }
 #mobile-projects .projects-container .job-card .content .title-links .links-container {
   color: #fff;
@@ -636,13 +812,29 @@ body {
   cursor: pointer;
 }
 #mobile-projects .projects-container .job-card .content .title-links .links-container .link i {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+@media (max-width: 771px) {
+  #mobile-projects .projects-container .job-card .content .title-links .links-container .link i {
+    font-size: 0.5rem;
+  }
 }
 #mobile-projects .projects-container .job-card .content .title-links .links-container .link span {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+@media (max-width: 771px) {
+  #mobile-projects .projects-container .job-card .content .title-links .links-container .link span {
+    font-size: 0.5rem;
+  }
 }
 #mobile-projects .projects-container .job-card .content .description {
   color: #fff;
+  font-size: 0.9rem;
+}
+@media (max-width: 771px) {
+  #mobile-projects .projects-container .job-card .content .description {
+    font-size: 0.7rem;
+  }
 }
 #mobile-projects .projects-container .job-card .content .job-stack {
   display: flex;

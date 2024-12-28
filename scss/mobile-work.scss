@@ -1,0 +1,113 @@
+#mobile-work {
+  @extend %section;
+  min-height: 60vh;
+
+  color: #fff;
+  display: none;
+
+  @media (max-width: $breakpoint-2) {
+    display: block;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
+  }
+
+  .jobs-container {
+    padding: 0.5rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4rem;
+    padding-bottom: 3rem;
+    .job {
+      .job-title-container {
+        height: 30px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        margin-bottom: 2.25rem;
+        img {
+          height: 100%;
+          width: auto;
+          border-radius: 50%;
+        }
+        .title-description {
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            font-size: 1rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+
+          p {
+            color: $main-blue;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .details-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        margin-bottom: 2rem;
+
+        .point-container {
+          display: flex;
+          gap: 60px;
+          align-items: center;
+
+          margin-left: 10px;
+
+          .bullet {
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            background-color: #fff;
+          }
+
+          .text {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            font-weight: bold;
+          }
+        }
+      }
+      .job-stack {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .stack-item {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          border-radius: 0.5rem;
+          background-color: rgb(34, 34, 34);
+          padding: 0.3rem 0.8rem 0.4rem 0.5rem;
+
+          img {
+            height: 0.7rem;
+            width: auto;
+          }
+          h4 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+}

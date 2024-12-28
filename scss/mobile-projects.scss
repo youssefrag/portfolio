@@ -8,13 +8,20 @@
 
   .main-title {
     color: #fff;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
     font-size: 3rem;
     margin-bottom: 2rem;
   }
 
   .projects-container {
-    padding: 0 4rem;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (max-width: $breakpoint-1) {
+      padding: 3rem 1rem;
+    }
 
     .job-card {
       display: flex;
@@ -24,10 +31,22 @@
         background-image: url("../assets/soundsphere.jpeg");
       }
 
+      #website-builder {
+        background-image: url("../assets/WebsiteBuilder.jpeg");
+      }
+
+      #box-shop {
+        background-image: url("../assets/BoxShop.jpeg");
+      }
+
       .logo {
         width: 40%;
         background-size: cover;
         background-position: center;
+
+        @media (max-width: $breakpoint-1) {
+          display: none;
+        }
       }
 
       .content {
@@ -41,14 +60,30 @@
         flex-direction: column;
         gap: 1.2rem;
 
+        @media (max-width: $breakpoint-1) {
+          width: 90%;
+        }
+
         .title-links {
           display: flex;
           align-items: center;
           gap: 2rem;
 
+          width: 60%;
+
+          @media (max-width: $breakpoint-1) {
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-start;
+          }
+
           .project-title {
             color: #fff;
             font-size: 1.4rem;
+
+            @media (max-width: $breakpoint-1) {
+              font-size: 1rem;
+            }
           }
 
           .links-container {
@@ -60,11 +95,19 @@
               cursor: pointer;
 
               i {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
+
+                @media (max-width: $breakpoint-1) {
+                  font-size: 0.5rem;
+                }
               }
 
               span {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
+
+                @media (max-width: $breakpoint-1) {
+                  font-size: 0.5rem;
+                }
               }
             }
           }
@@ -72,6 +115,11 @@
 
         .description {
           color: #fff;
+          font-size: 0.9rem;
+
+          @media (max-width: $breakpoint-1) {
+            font-size: 0.7rem;
+          }
         }
 
         .job-stack {

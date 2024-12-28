@@ -4,7 +4,10 @@
   border-top: 10px solid #868e96;
 
   color: white;
-  // padding: 5rem 10rem;
+
+  @media (max-width: $breakpoint-2) {
+    display: none;
+  }
 
   .main-title {
     font-size: 3.75rem;
