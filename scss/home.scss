@@ -31,12 +31,8 @@
       @media (max-width: $breakpoint-2) {
         margin: 60px 3rem;
       }
-      h3 {
-        color: white;
-
-        // @media (max-width: $breakpoint-1) {
-        //   display: none;
-        // }
+      img {
+        height: 100px;
       }
       .scoials-container {
         display: flex;

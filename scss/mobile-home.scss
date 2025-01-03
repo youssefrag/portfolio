@@ -22,12 +22,20 @@
     align-items: center;
     justify-content: space-evenly;
 
-    h3 {
-      color: #fff;
+    img {
+      height: 95px;
     }
 
-    h2 {
-      color: $main-blue;
+    .title-container {
+      text-align: center;
+      h2 {
+        color: white;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        color: $main-blue;
+      }
     }
 
     .button-container {

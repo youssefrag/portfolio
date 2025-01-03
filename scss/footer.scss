@@ -1,0 +1,61 @@
+#footer {
+  @extend %section;
+  min-height: 20vh;
+
+  padding: 5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  img {
+    height: 85px;
+  }
+
+  .scoials-container {
+    display: flex;
+    gap: 20px;
+    .social {
+      height: 35px;
+      width: 35px;
+      background-color: $main-grey;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.4s ease;
+    }
+
+    #linkedin i {
+      color: #fff;
+    }
+
+    #linkedin:hover {
+      background-color: #0077b5;
+    }
+
+    #github svg {
+      height: 80%;
+      width: 80%;
+      fill: #fff;
+    }
+
+    #github:hover {
+      background-color: #fff;
+    }
+
+    #email i {
+      color: #fff;
+    }
+
+    #email:hover {
+      background-color: #ff0000;
+    }
+  }
+
+  h2 {
+    color: white;
+  }
+}
