@@ -838,9 +838,11 @@ a {
 }
 #mobile-projects .projects-container .job-card .content .title-links .links-container .link {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 #mobile-projects .projects-container .job-card .content .title-links .links-container .link i {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 @media (max-width: 771px) {
   #mobile-projects .projects-container .job-card .content .title-links .links-container .link i {
