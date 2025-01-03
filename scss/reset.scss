@@ -10,6 +10,8 @@ body {
   background: $background;
   font-family: $font-stack;
   line-height: 1.6;
+
+  scroll-behavior: smooth;
 }
 
 * {

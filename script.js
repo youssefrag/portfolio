@@ -68,3 +68,9 @@ buttonContainer.addEventListener("mouseleave", () => {
   buttonContentHovered.style.display = "none";
   buttonContentRegular.style.display = "inline";
 });
+
+function scrollToWork() {
+  const work = document.getElementById("work");
+
+  work.scrollIntoView();
+}
