@@ -17,6 +17,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 #footer, #mobile-home, #mobile-projects, #mobile-work, #projects, #about, #work {
   min-height: 100vh;
   width: 100%;
