@@ -71,6 +71,16 @@ buttonContainer.addEventListener("mouseleave", () => {
 
 function scrollToWork() {
   const work = document.getElementById("work");
+  const mobileWork = document.getElementById("mobile-work");
+
+  console.log(work.style.display);
 
   work.scrollIntoView();
+  mobileWork.scrollIntoView();
 }
+
+// function scrollToWorkMobile() {
+//   const mobileWork = document.getElementById("mobile-work");
+
+//   mobileWork.scrollIntoView();
+// }
