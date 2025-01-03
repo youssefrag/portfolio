@@ -20,6 +20,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 #footer, #mobile-home, #mobile-projects, #mobile-work, #projects, #about, #work {
