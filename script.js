@@ -10,20 +10,36 @@ document.addEventListener("DOMContentLoaded", () => {
           entry.target.classList.add(toggleClass);
           const alibiDesc = document.getElementById("alibi-desc");
           const guilsProDesc = document.getElementById("guildsPro-desc");
+          const powaDesc = document.getElementById("powa-desc");
 
           const alibiStack = document.getElementById("alibi-stack");
           const guildsproStack = document.getElementById("guilsPro-stack");
+          const powaStack = document.getElementById("powa-stack");
+
           if (entry.target.classList[1] === "alibi") {
             guildsproStack.style.display = "none";
+            powaStack.style.display = "none";
             alibiStack.style.display = "inline";
+
             guilsProDesc.classList.remove("active");
+            powaDesc.classList.remove("active");
             alibiDesc.classList.add("active");
           } else if (entry.target.classList[1] === "guildsPro") {
             alibiStack.style.display = "none";
+            powaStack.style.display = "none";
             guildsproStack.style.display = "inline";
 
-            guilsProDesc.classList.add("active");
             alibiDesc.classList.remove("active");
+            powaDesc.classList.remove("active");
+            guilsProDesc.classList.add("active");
+          } else if (entry.target.classList[1] === "powa") {
+            alibiStack.style.display = "none";
+            guildsproStack.style.display = "none";
+            powaStack.style.display = "inline";
+
+            alibiDesc.classList.remove("active");
+            guilsProDesc.classList.remove("active");
+            powaDesc.classList.add("active");
           }
         }
       });
