@@ -75,7 +75,7 @@
           align-items: center;
           gap: 2rem;
 
-          width: 60%;
+          // width: 60%;
 
           @media (max-width: $breakpoint-1) {
             flex-direction: column;
@@ -103,10 +103,11 @@
               align-items: center;
 
               i {
-                font-size: 0.9rem;
+                // font-size: 50px;
+                margin-right: 0.5rem;
 
                 @media (max-width: $breakpoint-1) {
-                  font-size: 0.5rem;
+                  font-size: 1rem;
                 }
               }
 
