@@ -91,8 +91,8 @@ function scrollToWork() {
 
   console.log(work.style.display);
 
-  work.scrollIntoView();
-  mobileWork.scrollIntoView();
+  work.scrollIntoView({ behavior: "smooth" });
+  mobileWork.scrollIntoView({ behavior: "smooth" });
 }
 
 // function scrollToWorkMobile() {
